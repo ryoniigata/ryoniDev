@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Click Game</title>
+  </head>
+  <body>
+    <div id="parent-controller" style="width: 200px; height: 100px; background: silver; margin: 0 auto;">
+    <div id="time" style="font-size:40px; margin: 0 auto; text-align:center;">10</div>
+    <div id="parent-btn" style="text-align: center">
+    <button id="start" style="width: 50px; height:30px; border-radius:30%; display: block; margin: 0 auto; text-align:center; display: inline-block; ">Start</button>
+    <button id="reset" style="width: 50px; height:30px; border-radius:30%; display: block; margin: 0 auto; text-align:center; display: inline-block; ">Reset</button>
+    </div>
+    </div>
+    <div id="area" style="width:600px; height:800px; position:relative;">
+      <div id="target" style="position:absolute; background:black; width:100px; height:100px; border-radius:50%; overflow:hidden;">
+      </div>
+    </div>
+    <script>
+      function clickGame(){
+      var area = document.getElementById('area');
+
+      //球体の位置設定情報を取得
+      function moveArea(){
+        var x = Math.floor(Math.random()*800);
+        var y = Math.floor(Math.random()*600);
+
+        return { x: x , y: y };
+      }
+
+      //ボールの要素を取得
+      var target = document.getElementById('target');
+
+      var move_intervalId = setInterval(function(){
+        var move = moveArea();
+        target.style.left = move.x + 'px';
+        target.style.top = move.y + 'px';
+      },1000)
+
+      var count = 0;
+
+      function touchTarget(){
+        count++;
+      }
+
+      //制限時間の表示
+      var timelimit = document.getElementById('time').textContent;
+      var time_intervalId = setInterval(function(){
+        document.getElementById('time').textContent = ('0' + timelimit--).slice(-2);
+        if(timelimit == -1){
+          clearInterval(time_intervalId);
+          clearInterval(move_intervalId);
+          alert(count + '回クリックしました！');
+        }
+      },1000)
+
+      function cursolOver(){
+        target.style.background = 'red';
+      }
+
+      function cursolOut(){
+        target.style.background = 'black';
+      }
+
+      target.addEventListener('click',touchTarget);
+      target.addEventListener('mouseover',cursolOver);
+      target.addEventListener('mouseout',cursolOut);
+    }
+
+    function resetBtn(){
+      location.reload();
+    }
+
+    var start = document.getElementById('start');
+    start.addEventListener('click',function(){
+      clickGame();
+    });
+
+    var reset = document.getElementById('reset');
+    reset.addEventListener('click',function(){
+      resetBtn();
+    });
+
+    </script>
+  </body>
+</html>
