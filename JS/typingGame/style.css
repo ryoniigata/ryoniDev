@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: 'Trade Winds';
+  font-family: 'Odibee Sans';
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+
+.type {
+  color: white;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.type.ng {
+  color: red;
+}
+
+.type.ok {
+  color: blue;
+  /* アニメーションのGoogle Chromeで動作する定義 */
+  -webkit-animation: pyon 1s;
+  /* -webkit-animation: pyon 5s ease -2s infinite alternate; */
+}
+
+@-webkit-keyframes pyon {
+  /* 0、0.5、1秒後*/
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-30px);}
+  100% {transform: translateY(0);}
+}
+
+/* .test {
+  color: white;
+  -webkit-animation: anime1 5s ease -2s infinite alternate;
+}
+
+@-webkit-keyframes anime1 {
+0% {transform: translateY(0);}
+50% {transform: translateY(-30px);}
+100% {transform: translateY(0);}
+} */
+
+.timer {
+  color: white;
+  font-size: 64px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+}
