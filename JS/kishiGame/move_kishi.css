@@ -75,10 +75,16 @@ body {
   left: 50%;
 }
 
-#kishi1 {
+#kishi1,#kishi2 {
   top: 0;
   left: 50%;
 }
+
+#kohi1 {
+  top: 0;
+  left: 70%;
+}
+
 
 /* モーダルの設定 */
 #modal_wrapper {
