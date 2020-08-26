@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>top</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/nippo_submit.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <h3 class="header-title">Dairy Report</h3>
+      <a class="logout" href="login.html">ログアウト</a>
+    </header>
+
+ <!-- メニューナビ -->
+
+     <ul class="nav justify-content-center nav-fill">
+       <div class="container-fluid menu">
+         <div class="row menu-line">
+           <div class="col-md-2"></div>
+
+           <!-- マウスホバーのメニュー -->
+       <li class="nav-item dropdown col-md-2">
+         <a class="nav-link active" href="#">目標管理</a>
+         <div class="dropdown-menu hover-item" style="display:none;">
+           <a class="dropdown-item" href="task_edit.html"><span>タスク編集</span></a>
+           <a class="dropdown-item" href="#"><span>タスク履歴</span></a>
+           <a class="dropdown-item" href="#"><span>月間目標</span></a>
+         </div>
+       </li>
+
+       <li class="nav-item dropdown col-md-2">
+         <a class="nav-link" href="#">日報管理</a>
+         <div class="dropdown-menu hover-item" style="display:none;">
+           <a class="dropdown-item" href="nippo_submit.html"><span>日報提出</span></a>
+           <a class="dropdown-item" href="#"><span>一週間</span></a>
+           <a class="dropdown-item" href="#"><span>一ヵ月</span></a>
+           <a class="dropdown-item" href="#"><span>一年</span></a>
+         </div>
+       </li>
+
+       <li class="nav-item col-md-2">
+         <a class="nav-link" href="#">フォーマット登録</a>
+       </li>
+
+       <li class="nav-item col-md-2">
+         <a class="nav-link active" href="#">ユーザ管理</a>
+       </li>
+
+       <div class="col-md-2"></div>
+     </div>
+   </div>
+ </ul>
+
+
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8">
+          <form>
+            <div class="form-group">
+              <strong>* </strong><input class="nippo-title" type="text" name="nippo_title" placeholder="タイトルを入力してください" required>
+            </div>
+            <div class="form-group">
+              <strong>* </strong><input class="" type="date" name="nippo_date" required>
+            </div>
+            <div class="form-group">
+              <textarea class="nippo-content" name="nippo_content" rows="8" cols="80" placeholder="内容を入力してください"></textarea>
+            </div>
+            <div class="form-group">
+              <a class="btn btn-warning">提出</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="fixed-bottom">CopyRight Ryo Niigata</footer>
+
+    <script type="text/javascript" src="js/task_edit.js"></script>
+  </body>
+</html>

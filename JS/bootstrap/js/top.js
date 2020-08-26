@@ -1,3 +1,13 @@
+// プルダウンのメニューアイテム
+$('.dropdown').hover(function(){
+  $(this).find('.hover-item').show();
+},
+function(){
+  $(this).find('.hover-item').hide();
+});
+
+// グラフ描画
+(function(){
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
      type: 'line',
@@ -27,3 +37,4 @@
        }
      }
    });
+})();

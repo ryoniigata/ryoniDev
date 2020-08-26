@@ -1,0 +1,19 @@
+
+
+.task-show {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.container-task {
+  margin-top: 3%;
+}
+
+#task-input {
+  width: 100%;
+  height: 70%;
+}
+
+#task-input-btn {
+  width: 70%;
+}

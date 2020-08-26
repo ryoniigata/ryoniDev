@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>top</title>
+    <title>Task Edit</title>
     <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" href="css/top.css" rel="stylesheet">
     <link type="text/css" href="css/common.css" rel="stylesheet">
+    <link type="text/css" href="css/task_edit.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -19,15 +19,16 @@
       <a class="logout" href="login.html">ログアウト</a>
     </header>
 
+
     <!-- メニューナビ -->
 
         <ul class="nav justify-content-center nav-fill">
           <div class="container-fluid menu">
             <div class="row menu-line">
-              <div class="col-md-2"></div>
+              <!-- <div class="col-md-2"></div> -->
 
               <!-- マウスホバーのメニュー -->
-          <li class="nav-item dropdown col-md-2">
+          <li class="nav-item dropdown col-md-2 offset-md-2">
             <a class="nav-link active" href="#">目標管理</a>
             <div class="dropdown-menu hover-item" style="display:none;">
               <a class="dropdown-item" href="task_edit.html"><span>タスク編集</span></a>
@@ -54,53 +55,55 @@
             <a class="nav-link active" href="#">ユーザ管理</a>
           </li>
 
-          <div class="col-md-2"></div>
+          <!-- <div class="col-md-2"></div> -->
         </div>
       </div>
     </ul>
 
-    <!-- グラフ描画エリア -->
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-        <h6 class="table-title">タスク達成率</h6>
-        <canvas id="myChart"></canvas>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-
-    <!-- 提出済み日報表 -->
+        <!-- タスク入力ボックス -->
     <div class="container-fluid">
       <div class="row">
-    <div class="col-sm-2"></div>
-
-    <div class="col-sm-8 table-responsive nippo-table">
-      <h6 class="table-title">提出済み日報</h6>
-    <table class="table table-hover">
-      <tr>
-        <th>提出日時</th>
-        <th>タイトル</th>
-        <th>添付ファイル</th>
-      </tr>
-      <tr>
-        <td>2020-04-18 12:00:00</td>
-        <td>テストです！</td>
-        <td>xxxx.txt</td>
-      </tr>
-      <tr>
-        <td>2020-04-18 12:00:00</td>
-        <td>テストです！</td>
-        <td>xxxx.txt</td>
-      </tr>
-    </table>
+          <div class="col-sm-4 offset-sm-2">
+            <input id="task-input" type="text" name="task_form" placeholder="タスクを入力してください">
+          </div>
+          <div class="col-sm-2">
+            <a class="btn btn-warning" id="task-input-btn">登録</a>
+          </div>
+          <div class="col-sm-3">
+            <p>タスク数：<span id="task-all"></span></p><p>消化数　：<span id="task-complete"></span></p>
+          </div>
+      </div>
     </div>
 
-    <div class="col-sm-2"></div>
+    <h4 class="task-show">タスク一覧</h4>
+    <div class="container-fluid container-task">
+      <div class="row task-area">
+      <div class="col-sm-6 task-content-left">
+
+        <div class="container-left">
+          <div class="row">
+            <div class="col-6">test1</div>
+            <div class="col-6"><input class="task-check" type="checkbox" name="check"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 task-content-right">
+
+      <div class="container-right">
+        <div class="row">
+          <div class="col-6">test2</div>
+          <div class="col-6"><input class="task-check" type="checkbox" name="check"></div>
+        </div>
+      </div>
     </div>
+
+      </div>
     </div>
+
     <footer class="fixed-bottom">CopyRight Ryo Niigata</footer>
 
-    <script type="text/javascript" src="js/top.js"></script>
     <script type="text/javascript" src="js/task_edit.js"></script>
   </body>
 </html>

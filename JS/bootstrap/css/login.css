@@ -1,24 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-}
-
-header {
-  border-bottom: solid 2px #ffc107;
-  height: 7%;
-  color: #ffc107;
-}
-
 .login-container {
   margin-top: 10%;
   background-color: #fffafa;
@@ -43,8 +22,4 @@ form {
 
 .btn {
   width: 100%;
-}
-
-footer {
-  text-align: center;
 }
