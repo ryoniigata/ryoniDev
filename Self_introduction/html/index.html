@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ryiiiii|LPポートフォリオ</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index_phone.css">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works-skills">Works & Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+<!-- fomrのsubmit後画面 -->
+    <div class="container-submit">
+      <div class="contact-submit">
+        <p>送信完了しました。お問合せありがとうございます。</p>
+      </div>
+    </div>
+    <!-- ここまで -->
+
+
+    <div class="home1">
+      <h1 id="home">Ryiiiii Portfolio Page</h1>
+    </div>
+
+    <div class="about">
+      <h2 id="about">About me</h2>
+      <img src="../pictures/profile.jpg" alt="Ryiiiii画像" class="profile-image">
+      <div class="profile-txt">
+        <p><span>Ryiiiii</span><br><br>
+        1995年生まれ兵庫県出身。<br>
+        ITエンジニア歴は2年半で、主にWebアプリの開発・運用業務に従事。<br>
+        フルスタックエンジニアとして活躍するため日々勉強中。<br>
+        フロント・サーバサイドのコーディング作業依頼承ります。
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="works-skills">
+
+      <div class="works">
+        <h2 id="works-skills">Works</h2>
+        <table>
+          <tr>
+            <th>2019年1月</th>
+            <td>英語のオンラインレッスンを管理するWebアプリの運用業務に従事する。</td>
+          </tr>
+          <tr>
+            <th>2019年5月</th>
+            <td>位置情報を用いた災害対策情報を提供するWebアプリの運用業務に従事する。</td>
+          </tr>
+          <tr>
+            <th>2020年3月</th>
+            <td>運用業務を管理・自動化するWebアプリの開発業務に従事する。</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="skills">
+        <h2>Skills</h2>
+
+        <ul>
+          <article>
+            <section>
+              <li class="programing">
+                <img src="../pictures/java.png" alt="java">
+                <p><span>Java</span>Springフレームワークを用いてのWebアプリ開発が可能です。</p>
+              </li>
+            </section>
+            <section>
+              <li class="programing">
+                <img src="../pictures/javascript.jpg" alt="javascript">
+                <p><span>Javascript</span>データ加工や連携処理のコーディングが得意です。</p>
+              </li>
+            </section>
+            <section>
+              <li class="programing">
+                <img src="../pictures/html_css.jpg" alt="html_css">
+                <p><span>HTML&CSS</span>LPなどのコーディングが得意です。レスポンシブも対応可能です。</p>
+              </li>
+            </section>
+            <section>
+              <li class="programing">
+                <img src="../pictures/vba.png" alt="vba">
+                <p><span>VBA</span>進捗管理やデータ加工のマクロ作成が得意です。</p>
+              </li>
+
+            </section>
+          </article>
+        </ul>
+      </div>
+
+      <div class="qualifications">
+        <h2>Qualifications</h2>
+        <ul class="entitlement">
+          <li>基本情報技術者試験</li>
+          <li>Java SE8 Gold</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-container">
+
+    <div class="contact">
+      <h2 id="contact">Contact From</h2>
+      <form>
+        <dl class="contact-dl">
+          <dt>▼お名前 <span>※必須項目</span></dt>
+          <dd><input type="text" name="" value="" class="normal-input" required></dd>
+          <dt>▼メールアドレス <span>※必須項目</span></dt>
+          <dd><input type="email" name="" value="" class="normal-input" required></dd>
+          <dt>▼お電話番号</dt>
+          <dd><input type="tel" name="" value="" class="normal-input"></dd>
+          <dt>▼お問合せ種別</dt>
+          <dd><select class="contact-type normal-input" name="">
+            <option value="">相談・質問</option>
+            <option value="">仕事の依頼</option>
+            <option value="">その他</option>
+          </select></dd>
+          <dt>▼ご希望連絡方法</dt>
+          <dd>
+          <input type="radio" name="" value="">電話
+          <input type="radio" name="" value="">メール
+          </dd>
+          <dt>▼お問合せ内容 <span>※必須項目</span></dt>
+          <dd><textarea name="name" rows="8" cols="80" required></textarea></dd>
+          <button type="button" name="button">送信</button>
+        </dl>
+      </form>
+    </div>
+  </div>
+
+    <footer>©2020/Ryiiiii/All Right Reserved</footer>
+  </body>
+</html>
