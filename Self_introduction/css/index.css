@@ -65,7 +65,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    animation: change-img 20s infinite;
+    animation: change-img 10s infinite;
   }
 
   .home2{
@@ -76,8 +76,8 @@
     background-size: 100%;
     position: absolute;
     opacity: 0;
-    animation: change-img 20s infinite;
-    animation-delay: 10s;
+    animation: change-img 10s infinite;
+    animation-delay: 5s;
   }
 
   @keyframes change-img {
@@ -275,12 +275,13 @@
     color: red;
   }
 
-  .container-submit{
+  #container-submit{
+    z-index: 9000;
     height: 100%;
     width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    visibility: hidden;
   }
 
   .contact-submit{
@@ -294,10 +295,26 @@
     left: 25%;
   }
 
+  #close-button{
+    height: 7%;
+    width: 7%;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: red;
+    cursor: pointer;
+  }
+
+  #thanks-img{
+    height: 40%;
+    width: 70%;
+    margin-top: 50px;
+  }
+
   .contact-submit p{
     font-size: 30px;
     font-weight: bold;
-    padding-top: 240px;
+    padding-top: 50px;
   }
 
 

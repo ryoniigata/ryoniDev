@@ -18,8 +18,10 @@
     </header>
 
 <!-- fomrのsubmit後画面 -->
-    <div class="container-submit">
+    <div id="container-submit">
       <div class="contact-submit">
+        <div id="close-button">×</div>
+        <img src="../pictures/Thanks.png" alt="ありがとう" id="thanks-img">
         <p>送信完了しました。<br>お問合せありがとうございます。</p>
       </div>
     </div>
@@ -134,17 +136,18 @@
           </select></dd>
           <dt>▼ご希望連絡方法</dt>
           <dd>
-          <input type="radio" name="" value="">電話
-          <input type="radio" name="" value="">メール
+          <input type="radio" name="tel" value="tel" id="contact-tel">電話
+          <input type="radio" name="mail" value="mail" id="contact-mail">メール
           </dd>
           <dt>▼お問合せ内容 <span>※必須項目</span></dt>
           <dd><textarea name="name" rows="8" cols="80" required></textarea></dd>
-          <button type="button" name="button">送信</button>
+          <button type="button" name="button" id="contact-submit">送信</button>
         </dl>
       </form>
     </div>
   </div>
 
     <footer>©2020/Ryiiiii/All Right Reserved</footer>
+    <script type="text/javascript" src="../js/index.js"></script>
   </body>
 </html>
