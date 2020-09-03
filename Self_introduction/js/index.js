@@ -1,3 +1,9 @@
+
+
+alert("入力フォームで送信しても情報は送られません。");
+
+
+
 // 送信完了画面の表示
 
 let submit_btn = document.getElementById('contact-submit');
