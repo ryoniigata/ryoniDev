@@ -126,7 +126,7 @@
   }
 
   .about{
-    height: 650px;
+    height: 700px;
     width: 100%;
     text-align: center;
   }
@@ -152,6 +152,14 @@
     height: 300px;
     width: 300px;
     margin: 20px auto;
+  }
+
+  /* .profile-txt span{
+    font-weight: bold;
+  } */
+
+  .icon{
+    margin: 10px 0 15px 0;
   }
 
   .profile-txt p{
@@ -190,6 +198,7 @@
     width:70%;
     font-size: 0.6em;
     border: 1px solid #cccccc;
+    background: #fff;
     padding-left: 10px;
   }
 
@@ -206,6 +215,7 @@
     border-radius: 50px;
     height: 150px;
     width: 150px;
+    box-shadow: 0 0 4px gray;
   }
 
   .skills section{
@@ -228,7 +238,7 @@
   }
 
   .qualifications{
-    padding-top: 20px;
+    padding-top: 15px;
   }
 
   .entitlement li{
@@ -249,6 +259,7 @@
     margin: 0 auto;
     background-color: #f0f8ff;
     opacity: 0.9;
+    box-shadow: 0 0 4px gray;
   }
 
   .contact form dt{
